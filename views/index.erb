@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Device Management Server</title>
+    <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  
+  <body>
+	<div class="bar">Top Bar</div>
+    <div id="drop_target">
+		<p>Upload Configuration Profile</p>
+    </div>
+  </body>
+	<br />
+  <script type="text/javascript" charset="utf-8" src="/javascripts/jquery-1.4.3.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/javascripts/jquery.dnduploader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $("#drop_target").dndUploader({
+      url : "/",
+      method : "PUT"
+    });
+  </script>
+</html>
