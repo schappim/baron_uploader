@@ -49,6 +49,7 @@
           
           xhr.send(file);
         });
+
       };
             
       return false;

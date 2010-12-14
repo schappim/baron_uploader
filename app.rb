@@ -14,5 +14,10 @@ require 'sinatra'
     aFile = File.new(env['HTTP_X_FILENAME'], "wb")
     aFile.write(theFile)
     aFile.close
+    
+    
+  end
 
+  get '/2' do
+    'page 2'
   end
